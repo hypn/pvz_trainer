@@ -1,6 +1,8 @@
-pvz_trainer
+Plants vs Zombies Trainer
 ===========
 
-Plants vs Zombies trainer (outdated)
+This code is outdated, and only saved here for prosperity and a code base template for future trainers. 
 
-Saved here for prosperity - might update it one day :P
+I might update it one day :P
+
+Mmmm... sweet assembly code :D
