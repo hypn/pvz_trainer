@@ -1,0 +1,129 @@
+[Project]
+Assembler=masm
+Type=Win32 App
+Description=PvZtrainer
+Backup=$P\Bak\
+Group=1
+GroupExpand=1
+[Files]
+1=PvZtrainer.asm
+2=PvZtrainer.Inc
+3=PvZtrainer.Rc
+4=PvZtrainer.dlg
+5=
+[MakeFiles]
+0=PvZtrainer.rap
+1=PvZtrainer.rc
+2=PvZtrainer.asm
+3=PvZtrainer.obj
+4=PvZtrainer.res
+5=PvZtrainer.exe
+6=PvZtrainer.def
+7=PvZtrainer.dll
+8=PvZtrainer.txt
+9=PvZtrainer.lib
+10=PvZtrainer.mak
+11=PvZtrainer.hla
+12=PvZtrainer.com
+[MakeDef]
+Menu=1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0
+1=4,O,$B\RC.EXE /v,1
+2=3,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",2
+3=5,O,$B\LINK.EXE /SUBSYSTEM:WINDOWS /RELEASE /VERSION:4.0 /LIBPATH:"$L" /OUT:"$5",3,4
+4=0,0,,5
+5=rsrc.obj,O,$B\CVTRES.EXE,rsrc.res
+6=*.obj,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",*.asm
+7=0,0,"$E\OllyDbg",5
+11=4,O,$B\RC.EXE /v,1
+12=3,O,$B\ML.EXE /c /coff /Cp /Zi /nologo /I"$I",2
+13=5,O,$B\LINK.EXE /SUBSYSTEM:WINDOWS /DEBUG /VERSION:4.0 /LIBPATH:"$L" /OUT:"$5",3,4
+14=0,0,,5
+15=rsrc.obj,O,$B\CVTRES.EXE,rsrc.res
+16=*.obj,O,$B\ML.EXE /c /coff /Cp /nologo /I"$I",*.asm
+17=0,0,"$E\OllyDbg",5
+[Resource]
+[StringTable]
+[VerInf]
+[Group]
+Group=Added files,Assembly,Resources,Misc,Modules
+1=2
+2=2
+3=3
+4=3
+5=
+[Size]
+5=
+4=0,0,0,0
+1=0,0,809,581,12166
+2=0,0,809,581,774
+3=0,0,0,0,0
+[Find]
+1="004480A3"
+2="00486675"
+3="004868F4"
+4="00447F20"
+5="0044831A"
+6="szInvincPlantsOn"
+7="ToggleInvinciblePlants"
+8="ToggleFreeBuild"
+9="ToggleGetMaxSun"
+10="0040B095"
+[VersionControl]
+Settings=1246
+Milestones=129
+MilestoneEvery=10
+MilestoneEveryCurrent=0
+MilestoneOnBuild=0.0.0.0
+MilestoneOnTime=2
+MilestoneOnDate=0
+MilestoneOnDateWhen=1
+MilestoneOnDateStatus=0
+MilestoneOnDateDate=14
+MilestoneOnDateTimeYear=2008
+MilestoneOnDateTimeMonth=9
+MilestoneOnDateTimeDate=8
+MilestoneOnDateTimeHour=17
+MilestoneOnDateTimeMin=40
+MilestoneOnDateTimeSec=49
+MilestoneOnDateTimeStatus=0
+BackupLocation=D:\Programs\RadASM 2.2.1.1\Masm\Projects\VCBackups\
+CompressionLevel=0
+DefaultComment=Project $N, $Z, Backup Created On $D At $T.
+ExcludeExt1=\
+ExcludeExt2=\
+ExcludeExt3=\
+ExcludeExt4=\
+FileVerLength=4
+FileVer2Range=0
+FileVer3Range=0
+FileVer4Range=0
+ProductVerLength=4
+ProductVer2Range=0
+ProductVer3Range=0
+ProductVer4Range=0
+[Colref]
+0=00FFFFFF
+1=00FFFFFF
+2=00FFFFFF
+3=00FFFFFF
+4=00FFFFFF
+5=00FFFFFF
+6=00FFFFFF
+7=00FFFFFF
+[Collapse]
+1=,,
+2=
+3=
+[BookMark]
+0=
+1=
+2=
+3=
+4=
+5=
+6=
+7=
+8=
+9=
+[BreakPoint]
+0=
